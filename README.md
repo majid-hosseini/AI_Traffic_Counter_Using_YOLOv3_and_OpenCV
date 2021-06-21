@@ -4,7 +4,7 @@ An AI traffic counter is implemented in this project to detect and track vehicle
 - YOLO algorithms to detect objects on each of the video frames. 
 - SORT algorithms to track those objects over different frames.
 
-##How it works
+## How it works
 This AI traffic counter is composed of three main components: a detector, tracker and counter. A detector capable of processing a Realtime video to identify vehicles in a given frame of video and returns a list of bounding boxes around the objects was explained in my previous project titled [Realtime Object Detector](https://github.com/majid-hosseini/Realtime-Object-Detector). The tracker uses the bounding boxes to track the vehicles in subsequent frames. The detector is also used to update the trackers periodically to ensure that they are still tracking the vehicles correctly. Once the objects are detected and tracked over different frames of a traffic video stream, a mathematical calculation is applied to count the number of vehicles that their previous and current frame positions intersect with a defined line in the frames.
 
 
