@@ -1,4 +1,4 @@
-# AI traffic Counter Using YOLOv3 and OpenCV
+# AI Traffic Counter Using YOLOv3 and OpenCV
 An AI traffic counter is implemented in this project to detect and track vehicles on a video stream and count those going through a defined line on each direction of a highway. It utilizes the following two algorithms:
 
 - YOLO algorithms to detect objects on each of the video frames. 
