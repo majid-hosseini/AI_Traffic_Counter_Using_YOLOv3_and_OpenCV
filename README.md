@@ -4,6 +4,15 @@ An AI traffic counter is implemented in this project to detect and track vehicle
 - YOLO algorithms to detect objects on each of the video frames. 
 - SORT algorithms to track those objects over different frames.
 
+
+
+## Sample ouput
+Following is a sample output of this project showing detected vehicles and two counter indicating the number of vehicles on both directions of a highway traffic video.
+
+![Sample-output](https://github.com/majid-hosseini/AI_traffic_counter_using_YOLOv3_and_Keras/blob/main/input/Output_5.gif)
+
+ 
+
 ## How it works
 This AI traffic counter is composed of three main components: a detector, tracker and counter. A detector capable of processing a Realtime video to identify vehicles in a given frame of video and returns a list of bounding boxes around the objects was explained in my previous project titled [Realtime Object Detector](https://github.com/majid-hosseini/Realtime-Object-Detector). The tracker uses the bounding boxes to track the vehicles in subsequent frames. The detector is also used to update the trackers periodically to ensure that they are still tracking the vehicles correctly. Once the objects are detected and tracked over different frames of a traffic video stream, a mathematical calculation is applied to count the number of vehicles that their previous and current frame positions intersect with a defined line in the frames.
 
@@ -35,13 +44,6 @@ This project is an implementation of YOLOv3 and SORT algorithms to count vehicle
 * processed frames are displayed using cv2.imshow method
 * save the video of processed frames indicating detected objects and the counter
 *close video files and destroy the window, which was created by the imshow method using cap.release() and cv2.destroyAllWindows() commands. 
-
-## Sample ouput
-Following is a sample output of this project showing detected vehicles and two counter indicating the number of vehicles on both directions of a highway traffic video.
-
-![Sample-output](https://github.com/majid-hosseini/AI_traffic_counter_using_YOLOv3_and_Keras/blob/main/input/Output_5.gif)
-
- 
 
 
 # Requirement
